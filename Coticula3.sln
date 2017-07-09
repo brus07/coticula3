@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26621.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coticula3", "Coticula3\Coticula3.csproj", "{36B05EAF-D8EA-40AC-BE84-B01B38592321}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coticula3", "Coticula3\Coticula3.csproj", "{36B05EAF-D8EA-40AC-BE84-B01B38592321}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coticula3.Test", "Coticula3.Test\Coticula3.Test.csproj", "{AE5D406A-8653-4F3D-BE5F-32ACD7407204}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coticula3.Test", "Coticula3.Test\Coticula3.Test.csproj", "{AE5D406A-8653-4F3D-BE5F-32ACD7407204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coticula3.Internal.Test", "Coticula3.Internal.Test\Coticula3.Internal.Test.csproj", "{22FEC456-F5DE-421E-9740-15C6C954BBAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AE5D406A-8653-4F3D-BE5F-32ACD7407204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE5D406A-8653-4F3D-BE5F-32ACD7407204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE5D406A-8653-4F3D-BE5F-32ACD7407204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22FEC456-F5DE-421E-9740-15C6C954BBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22FEC456-F5DE-421E-9740-15C6C954BBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22FEC456-F5DE-421E-9740-15C6C954BBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22FEC456-F5DE-421E-9740-15C6C954BBAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
