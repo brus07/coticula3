@@ -10,7 +10,7 @@ namespace Coticula.Internal.Test.Data
     public class StandardTesterTests
     {
         [Test]
-        [Ignore("Waiting for implementing Run method in StardardTester.", Until = "2017-08-01 00:00:00Z")]
+        [Ignore("Waiting for implementing Run method in StardardTester.")]
         public void RunTesterTest()
         {
             var runnerMock = new Mock<IRunner>();

@@ -1,22 +1,35 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v2.0",
-    "signature": "afa2d25a10314d8a583c83a35b2edef8709caf34"
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "a00c1a4837a323715d598b54a54580d0126f00fd"
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v2.0": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
       "protex/1.0.0": {
         "dependencies": {
-          "Microsoft.Extensions.CommandLineUtils": "1.1.1"
+          "Microsoft.Extensions.CommandLineUtils": "1.1.1",
+          "NETStandard.Library": "2.0.0-preview2-25401-01"
         },
         "runtime": {
           "protex.dll": {}
         }
       },
       "Microsoft.Extensions.CommandLineUtils/1.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0-preview2-25401-01"
+        },
         "runtime": {
           "lib/netstandard1.3/Microsoft.Extensions.CommandLineUtils.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.Packaging.Tools/1.0.0-preview2-25401-01": {},
+      "NETStandard.Library/2.0.0-preview2-25401-01": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Packaging.Tools": "1.0.0-preview2-25401-01"
         }
       }
     }
@@ -33,6 +46,27 @@
       "sha512": "sha512-vsI1L6Bx602aQ/8051nrRbAWGxCQQX7IKT/9XApnEYfzLPBX7LcCZuwnDyD1bHTm2D8GcMweVSPr1H2rAfAgbA==",
       "path": "microsoft.extensions.commandlineutils/1.1.1",
       "hashPath": "microsoft.extensions.commandlineutils.1.1.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hnYr8vGT0ZWW3IkcpFGeGhMHqBTtuns2WecFzU8XTgdCqXV1f4vCl4JmLbgdnMFDZdILonF9La3MU+JfhvNGbw==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.Packaging.Tools/1.0.0-preview2-25401-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XZdnfJtpfqyx0lKhvLTqK3HzYFrXog+YLPziawc/UZ00A6A3+FMnSVZjReSRZAeseeyueSxmsVnisWnavDKe1g==",
+      "path": "microsoft.packaging.tools/1.0.0-preview2-25401-01",
+      "hashPath": "microsoft.packaging.tools.1.0.0-preview2-25401-01.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0-preview2-25401-01": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J3Vxgqzz7Kvw4DegCn55tkeyNAdHrhtjhsxNPk0jHzKntsAHKuoM1jCuhR/mKGherd0xPaA688wTyh/N68QyAA==",
+      "path": "netstandard.library/2.0.0-preview2-25401-01",
+      "hashPath": "netstandard.library.2.0.0-preview2-25401-01.nupkg.sha512"
     }
   }
 }
