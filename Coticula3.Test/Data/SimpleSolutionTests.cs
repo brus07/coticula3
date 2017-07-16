@@ -16,6 +16,7 @@ namespace Coticula.Test.Data
             };
             Assert.AreEqual(id, solution.TaskId);
         }
+
         [Test]
         public void TestGetSolutionProperty()
         {
