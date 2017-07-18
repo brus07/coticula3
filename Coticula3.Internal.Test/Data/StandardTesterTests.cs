@@ -1,4 +1,5 @@
 ﻿using Coticula.Data;
+using Coticula.Data.Storage;
 using Coticula.Testers;
 using Moq;
 using NUnit.Framework;
@@ -10,13 +11,15 @@ namespace Coticula.Internal.Test.Data
     public class StandardTesterTests
     {
         [Test]
-        [Ignore("Waiting for implementing Run method in StardardTester.")]
+        [Explicit("Waiting for implementing Run method in StardardTester.")]
         public void RunTesterTest()
         {
             var runnerMock = new Mock<IRunner>();
-            StardardTester tester = new StardardTester(runnerMock.Object);
+            var storageMock = new Mock<IStorage>();
 
-            SimpleSolution solution = new SimpleSolution()
+            ITester tester = new StardardTester(runnerMock.Object, storageMock.Object);
+
+            ISolution solution = new SimpleSolution()
             {
                 TaskId = 123,
                 Solution = "begin \n end.",

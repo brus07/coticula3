@@ -2,7 +2,7 @@
 
 namespace Coticula.Data
 {
-    public interface ITask
+    internal interface ITask
     {
         int Id { get; }
 

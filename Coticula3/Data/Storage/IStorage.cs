@@ -1,7 +1,7 @@
 ﻿
 namespace Coticula.Data.Storage
 {
-    interface IStorage
+    internal interface IStorage
     {
         ITask GetTask(int id);
     }

@@ -1,7 +1,7 @@
 ﻿
 namespace Coticula.Data
 {
-    public interface ITest
+    internal interface ITest
     {
         int Id { get; }
 
