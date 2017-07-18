@@ -74,7 +74,7 @@ namespace Coticula.Internal.Test.Data
 
         [Test]
         [TestCaseSource("IncorrectIdsCases")]
-        public void TestLeadProblem(int id)
+        public void TestLoadProblem(int id)
         {
             string problemsBasePath = Path.Combine(ProblemsBasePath, "Problem" + id);
 

@@ -20,7 +20,7 @@ namespace Coticula.Data
             Id = id;
 
             if (!Directory.Exists(basePath))
-                throw new ArgumentException("Incorrect basePath. Folder does not exist", "basePath");
+                throw new ArgumentException("Incorrect basePath. Folder does not exist.", "basePath");
 
             Tests = new List<ITest>();
             foreach (var testDir in Directory.EnumerateDirectories(basePath, "test*"))
@@ -53,6 +53,9 @@ namespace Coticula.Data
 
                 Tests.Add(new TestingFileTest(testId, inputFile, outputFile));
             }
+
+            if (Tests.Count == 0)
+                throw new ArgumentException("Incorrect task directory. At least 1 test should be included.", "basePath");
         }
     }
 }
