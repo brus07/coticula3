@@ -11,7 +11,7 @@ namespace Coticula.Internal.Test.Testers
     {
         [Test]
         [Explicit]
-        public void TestCompiler()
+        public void TestCompilerWith_SwapSource_CSharp()
         {
             var runnerMock = new Mock<IRunner>();
             Compiler compiler = new Compiler(runnerMock.Object);
@@ -30,6 +30,37 @@ public class Swap
         Console.WriteLine(""{ 0 } { 1 }"", int.Parse(tokens[1]), int.Parse(tokens[0]));
     }
 }
+",
+                Language = Language.CSharp
+            };
+
+            var result = compiler.Run(solution);
+        }
+
+        [Test]
+        [Explicit]
+        public void TestCompilerWith_HelloWorldSource_CSharp()
+        {
+            var runnerMock = new Mock<IRunner>();
+            Compiler compiler = new Compiler(runnerMock.Object);
+
+            ISolution solution = new SimpleSolution()
+            {
+                TaskId = 123,
+                Solution = @"
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(""Hello World!"");
+        }
+    }
+}
+
 ",
                 Language = Language.CSharp
             };
